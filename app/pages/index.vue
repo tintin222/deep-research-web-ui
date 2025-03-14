@@ -13,7 +13,7 @@
             <GitHubButton />
             <ConfigManager ref="configManagerRef" />
             <ColorModeButton />
-            <LangSwitcher />
+            <LangSwitcherDemo />
           </div>
         </div>
 

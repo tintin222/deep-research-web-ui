@@ -1,0 +1,118 @@
+{
+  "language": "Türkçe",
+  "modelThinking": "Düşünüyor...",
+  "modelThinkingComplete": "Düşünme tamamlandı",
+  "invalidStructuredOutput": "Model eksik veya geçersiz içerik döndürdü ve ayrıştırılamıyor. Daha büyük veya \"daha akıllı\" bir model kullanmayı deneyin.",
+  "index": {
+    "projectDescription": "Bu, ODS Derin Araştırma için bir web arayüzüdür ve yapay zekanın belirli sorulara dayalı olarak çevrimiçi arama yapmasına ve kendi başına daha derinlemesine incelemesine olanak tanır ve ardından ODS ekibi tarafından kullanılacak bir araştırma raporu çıkarır.\nBu proje, gerçek zamanlı geri bildirim için akış yapay zeka yanıtları ve araştırma sürecinin ağaç yapısı kullanılarak görselleştirilmesini içerir. Sonuçlar daha sonra Tübitak, AB Fonları, Kalkınma Ajansları vb. için Fon Başvurularının hazırlanmasında kullanılabilir.",
+    "missingConfigTitle": "Yapılandırma ayarlanmadı"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "disclaimer": "Ayarlar tarayıcınızda yerel olarak saklanır.",
+    "save": "Kaydet",
+    "ai": {
+      "provider": "Yapay Zeka Sağlayıcısı",
+      "apiKey": "API Anahtarı",
+      "apiBase": "API Temel URL",
+      "model": "Model",
+      "contextSize": "Bağlam Uzunluğu",
+      "contextSizeHelp": "Modele gönderilecek maksimum token sayısı. Modelin bağlam uzunluğundan büyük olamaz.",
+      "providers": {
+        "openaiCompatible": {
+          "title": "OpenAI Uyumlu",
+          "description": "OpenAI API ile uyumlu olan her sağlayıcı. Not: Bazı sağlayıcıların daha iyi performans için kendi seçenekleri vardır."
+        },
+        "siliconflow": {
+          "title": "SiliconFlow",
+          "description": "Kayıt sırasında ¥14 ücretsiz kredi sunar. {0} adresinden bir API anahtarı alın."
+        },
+        "infiniai": {
+          "title": "Infiniai",
+          "description": "Kayıt olduktan sonra, tam güçlü DeepSeek R1 ve diğer çıkarım hızlandırılmış modelleri herhangi bir engel olmadan kullanabilirsiniz. {0} adresinde oturum açtıktan sonra bir API anahtarı oluşturun."
+        }
+      }
+    },
+    "webSearch": {
+      "provider": "Web Arama Sağlayıcısı",
+      "apiKey": "API Anahtarı",
+      "queryLanguage": "Sorgu Dili",
+      "queryLanguageHelp": "Arama sorgusunun dili. Farklı bir dilde arama sonuçları almak istiyorsanız kullanışlıdır.\nSonuçları yazarken, yapay zeka modeli yine de web arayüzü ile aynı dili kullanacaktır.",
+      "providers": {
+        "tavily": {
+          "help": "Firecrawl'a benzer, ancak ayda 1000 ücretsiz kredi sağlar. {0} adresinden bir API anahtarı alın.",
+          "advancedSearch": "Gelişmiş Arama",
+          "advancedSearchHelp": "Daha yüksek kaliteli arama sonuçları alın. Her seferinde 1 ekstra krediye mal olur.",
+          "searchTopic": "Arama Konusu",
+          "searchTopicHelp": "Aramayı seçilen konu için özelleştirilmiş ve düzenlenmiş bilgilerle optimize edin. Varsayılan olarak 'general' kullanılır."
+        },
+        "firecrawl": {
+          "help": "Resmi hizmeti kullanıyorsanız {0} adresinden bir API anahtarı alın."
+        }
+      },
+      "concurrencyLimitHelp": "Eşzamanlı arama görevlerini sınırlayın. Bu, arama sağlayıcısını aşırı yüklemekten ve isteklerin başarısız olmasından kaçınmak için kullanışlıdır.",
+      "concurrencyLimit": "Eşzamanlılık Sınırı",
+      "apiBase": "API Temel URL"
+    }
+  },
+  "researchTopic": {
+    "title": "1. Araştırma Konusu",
+    "inputTitle": "Araştırma Konusu",
+    "placeholder": "Araştırmak istediğiniz herhangi bir şey...",
+    "numOfQuestions": "Soru Sayısı",
+    "numOfQuestionsHelp": "Netleştirmek için takip soruları sayısı.",
+    "depth": "Derinlik",
+    "depthHelp": "İterasyon sayısı.",
+    "breadth": "Genişlik",
+    "breadthHelp": "İlk iterasyondaki arama sayısı. Her iterasyonun arama genişliği, bir öncekinin yarısıdır.",
+    "start": "Araştırmayı Başlat",
+    "researching": "Araştırılıyor..."
+  },
+  "modelFeedback": {
+    "title": "2. Model Geri Bildirimi",
+    "description": "Yapay zeka, araştırma yönünü netleştirmenize yardımcı olmak için size bazı takip soruları soracaktır.",
+    "waiting": "Model geri bildirimi bekleniyor...",
+    "submit": "Cevabı Gönder",
+    "error": "Geri bildirim alınırken hata oluştu: {0}",
+    "noQuestions": "Model herhangi bir takip sorusu döndürmedi."
+  },
+  "webBrowsing": {
+    "title": "3. Web Tarama",
+    "description": "Yapay zeka daha sonra araştırma hedefimize dayalı olarak web'de arama yapacak ve derinliğe ulaşılana kadar tekrarlayacaktır.",
+    "clickToView": "Ayrıntıları görüntülemek için bir alt düğüme tıklayın.",
+    "nodeDetails": "Düğüm Ayrıntıları",
+    "startNode": {
+      "description": "Bu, derin araştırma yolculuğunuzun başlangıcıdır!"
+    },
+    "researchGoal": "Araştırma Hedefi",
+    "visitedUrls": "Ziyaret Edilen URL'ler",
+    "learnings": "Öğrenilenler",
+    "generating": "Oluşturuluyor...",
+    "nodeFailed": "Arama başarısız oldu",
+    "nodeFailedToast": "Arama düğümü \"{label}\" başarısız oldu",
+    "followUpQuestions": "Takip Soruları",
+    "retry": "Yeniden Dene"
+  },
+  "researchReport": {
+    "title": "4. Araştırma Raporu",
+    "exportPdf": "Yazdır (PDF)",
+    "exportMarkdown": "Markdown Olarak Dışa Aktar",
+    "sources": "Kaynaklar",
+    "waiting": "Rapor bekleniyor...",
+    "generating": "Rapor oluşturuluyor...",
+    "regenerate": "Yeniden Oluştur",
+    "incompatibleBrowser": "Uyumsuz tarayıcı",
+    "incompatibleBrowserDescription": "Tarayıcınız bu yazdırma yöntemini desteklemiyor. Lütfen modern bir tarayıcı kullanmayı düşünün veya Markdown'ı dışa aktarın ve https://md-to-pdf.fly.dev gibi diğer hizmetleri kullanarak manuel olarak PDF'ye dönüştürün (Kendi sorumluluğunuzda kullanın)",
+    "exportFailed": "Dışa aktarma başarısız oldu",
+    "generateFailed": "Rapor oluşturma başarısız oldu: {0}"
+  },
+  "error": {
+    "requestBlockedByCORS": "Mevcut API sağlayıcısı çapraz kaynak isteklerine izin vermeyebilir. Lütfen farklı bir hizmet sağlayıcısı deneyin veya destek için sağlayıcıyla iletişime geçin."
+  },
+  "autoUpdate": {
+    "newVersionTitle": "Yeni sürüm mevcut: {0}",
+    "newVersionDescription": "Not: Kendi barındırdığınız bir sürüm kullanıyorsanız, yeni özellikler ve hata düzeltmeleri almak için lütfen yeniden dağıtın.",
+    "refresh": "Sayfayı yenile",
+    "dismiss": "Kapat"
+  }
+} 

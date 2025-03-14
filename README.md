@@ -1,6 +1,6 @@
 # Deep Research Web UI
 
-[English | [中文](README_zh.md)]
+[English | [中文](README_zh.md) | [Türkçe](README_tr.md)]
 
 This is a web UI for https://github.com/dzhng/deep-research, with several improvements and fixes.
 

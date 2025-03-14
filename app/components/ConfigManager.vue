@@ -333,7 +333,7 @@
                     tag="p"
                   />
                 </template>
-                <LangSwitcher
+                <LangSwitcherDemo
                   :value="config.webSearch.searchLanguage"
                   @update="config.webSearch.searchLanguage = $event"
                   private
